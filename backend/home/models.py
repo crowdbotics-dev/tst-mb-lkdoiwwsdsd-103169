@@ -7,3 +7,4 @@ class Hello(models.Model):
 class Helloo(models.Model):
     'Generated Model'
     sddssd = models.BigIntegerField()
+    sdsd = models.BigIntegerField(null=True,blank=True,)
