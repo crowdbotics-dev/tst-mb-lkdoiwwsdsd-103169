@@ -4,3 +4,6 @@ class Hello(models.Model):
     'Generated Model'
     sdddsd = models.BigIntegerField()
     sddds = models.BigIntegerField(null=True,blank=True,)
+class Helloo(models.Model):
+    'Generated Model'
+    sddssd = models.BigIntegerField()
