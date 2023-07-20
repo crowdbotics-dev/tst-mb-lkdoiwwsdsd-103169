@@ -44,6 +44,24 @@ function api_v1_helloo_partial_update(payload) {
 function api_v1_helloo_destroy(payload) {
   return tstmblkdoiwwsdsdAPI.delete(`/api/v1/helloo/${payload.id}/`)
 }
+function api_v1_hi_list(payload) {
+  return tstmblkdoiwwsdsdAPI.get(`/api/v1/hi/`)
+}
+function api_v1_hi_create(payload) {
+  return tstmblkdoiwwsdsdAPI.post(`/api/v1/hi/`, payload)
+}
+function api_v1_hi_retrieve(payload) {
+  return tstmblkdoiwwsdsdAPI.get(`/api/v1/hi/${payload.id}/`)
+}
+function api_v1_hi_update(payload) {
+  return tstmblkdoiwwsdsdAPI.put(`/api/v1/hi/${payload.id}/`, payload)
+}
+function api_v1_hi_partial_update(payload) {
+  return tstmblkdoiwwsdsdAPI.patch(`/api/v1/hi/${payload.id}/`, payload)
+}
+function api_v1_hi_destroy(payload) {
+  return tstmblkdoiwwsdsdAPI.delete(`/api/v1/hi/${payload.id}/`)
+}
 function api_v1_login_create(payload) {
   return tstmblkdoiwwsdsdAPI.post(`/api/v1/login/`, payload)
 }
@@ -100,6 +118,12 @@ export const apiService = {
   api_v1_helloo_update,
   api_v1_helloo_partial_update,
   api_v1_helloo_destroy,
+  api_v1_hi_list,
+  api_v1_hi_create,
+  api_v1_hi_retrieve,
+  api_v1_hi_update,
+  api_v1_hi_partial_update,
+  api_v1_hi_destroy,
   api_v1_login_create,
   api_v1_signup_create,
   rest_auth_login_create,
