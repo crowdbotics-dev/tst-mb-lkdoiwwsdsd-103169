@@ -9,3 +9,6 @@ class Helloo(models.Model):
     sddssd = models.BigIntegerField()
     sdsd = models.BigIntegerField(null=True,blank=True,)
     ddsdssd = models.BigIntegerField(null=True,blank=True,)
+class Hi(models.Model):
+    'Generated Model'
+    sddsds = models.BigIntegerField()

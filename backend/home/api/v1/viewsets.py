@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from home.models import Hello,Helloo
-from .serializers import HelloSerializer,HellooSerializer
+from home.models import Hello,Helloo,Hi
+from .serializers import HelloSerializer,HellooSerializer,HiSerializer
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.viewsets import ModelViewSet, ViewSet
@@ -42,3 +42,8 @@ class HellooViewSet(viewsets.ModelViewSet):
     serializer_class = HellooSerializer
     authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
     queryset = Helloo.objects.all()
+
+class HiViewSet(viewsets.ModelViewSet):
+    serializer_class = HiSerializer
+    authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
+    queryset = Hi.objects.all()
