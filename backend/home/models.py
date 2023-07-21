@@ -13,3 +13,4 @@ class Hi(models.Model):
     'Generated Model'
     sddsds = models.BigIntegerField()
     daddsadds = models.BigIntegerField(null=True,blank=True,)
+    sddsd = models.BigIntegerField(null=True,blank=True,)
